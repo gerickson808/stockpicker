@@ -24,7 +24,11 @@ def stockpicker(numbers)
 		end
 	end
 	print "\n"
-	print "Buy on day #{buy_day} and sell on day #{sell_day} for a profit of $#{max_diff}."
+	if max_diff == 0
+		print "There's no profit to be made here."
+	else
+		print "Buy on day #{buy_day} and sell on day #{sell_day} for a profit of $#{max_diff}."
+	end
 end
 
 
